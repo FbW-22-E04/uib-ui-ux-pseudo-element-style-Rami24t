@@ -16,10 +16,12 @@ ul:first-of-type li::before {
   height: 1.4rem;
   background-repeat: no-repeat;
 }
+
 ul li {
   /* text-align: center; */
   list-style-type: none;
 }
+
 a[href$="pdf"]::after {
   background-image: url(https://img.icons8.com/officel/64/000000/pdf.png);
 }
