@@ -20,13 +20,13 @@ ul li {
   /* text-align: center; */
   list-style-type: none;
 }
-a[href*="pdf"]::after {
+a[href$="pdf"]::after {
   background-image: url(https://img.icons8.com/officel/64/000000/pdf.png);
 }
 a[href$="xls"]::after {
   background-image: url(https://img.icons8.com/dusk/64/000000/ms-excel.png);
 }
-a[href*="doc"]::after {
+a[href$="doc"]::after {
   background-image: url(https://img.icons8.com/dusk/64/000000/ms-word.png);
 }
 a::after {
