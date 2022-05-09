@@ -1,0 +1,57 @@
+/* CSS Stylesheet */
+body {
+  min-height: 100rem;
+  max-width: 50rem;
+  margin: auto;
+  padding: 2rem;
+}
+
+ul:first-of-type li::after,
+ul:first-of-type li::before {
+  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/161359/quotes.png);
+  content: "";
+  display: inline-block;
+  background-size: contain;
+  width: 1.4rem;
+  height: 1.4rem;
+  background-repeat: no-repeat;
+}
+
+ul li {
+  /* text-align: center; */
+  list-style-type: none;
+}
+
+a[href$="pdf"]::after {
+  background-image: url(https://img.icons8.com/officel/64/000000/pdf.png);
+}
+a[href$="xls"]::after {
+  background-image: url(https://img.icons8.com/dusk/64/000000/ms-excel.png);
+}
+a[href$="doc"]::after {
+  background-image: url(https://img.icons8.com/dusk/64/000000/ms-word.png);
+}
+a::after {
+  content: "";
+  display: inline-block;
+  background-size: contain;
+  width: 2rem;
+  height: 2rem;
+  background-repeat: no-repeat;
+  margin-left: 0.6rem;
+}
+
+div.sandwich::before {
+  height: 1rem;
+  width: 100%;
+  content: "";
+  display: block;
+  background: linear-gradient(to right, #1fa2ff, #12d8fa, #a6ffcb);
+}
+div.sandwich::after {
+  content: "";
+  display: inline-block;
+  height: 1rem;
+  width: 100%;
+  background: linear-gradient(to left, #1fa2ff, #12d8fa, #a6ffcb);
+}
